@@ -1,0 +1,17 @@
+#строка 3 ошибка имени переменной строка 1 ошибка аргумента функции
+# строка 6 ошибка диапазона для for строка 11 ошибка оператора print
+inputUser = int(input("Введите число для вычисления факториала: "))
+
+
+def factorial(inputUser):
+    if inputUser == 0 :
+        return 1
+    else:
+        tempNum = 1
+        for i in range(1, inputUser+1):
+            tempNum *= i
+        return tempNum
+
+
+result = factorial(inputUser)
+print("Факториал числа", inputUser, "=", result)
