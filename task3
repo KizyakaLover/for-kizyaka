@@ -1,0 +1,17 @@
+#строка 3 ошибка в функции return строка 11 ошибка print строка 7 return
+#строка 8 ошибка в названии переменной строка 9 ошибка в названии переменной  строка 10 ошибка в аргументе переменной
+n = int(input("Введите число для проверки на простоту: "))
+
+
+def is_prime(n):
+    if n <= 1:
+        return False
+    for i in range(2, n):
+        if n % i == 0:
+            return False
+    return True
+
+
+num = int(n)
+result = is_prime(n)
+print(num, "является простым числом:", result)
