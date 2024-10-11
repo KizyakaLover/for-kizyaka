@@ -1,0 +1,14 @@
+#строчка 6 вместо вернуть среднее return mean, строчки 8-9 ошибка в имени переменной надо result
+numbers = [10, 20, 30, 40, 50]
+
+
+def find_mean():
+    total = 0
+    for num in numbers:
+        total += num
+    mean = total // len(numbers)
+    return mean
+
+
+result = find_mean()
+print("Среднее значение чисел:", result)
